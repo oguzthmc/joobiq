@@ -47,7 +47,7 @@ const Wrapper = styled.section`
 
   @media (min-width: 992px) {
     .page {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 400px;
       column-gap: 3rem;
     }
 
@@ -56,4 +56,5 @@ const Wrapper = styled.section`
     }
   }
 `;
+
 export default Wrapper;
