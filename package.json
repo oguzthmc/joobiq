@@ -4,7 +4,8 @@
   "description": "[Joobiq](https://joobiq.live/)",
   "main": "index.js",
   "scripts": {
-    "setup-project": "npm i && cd client && npm i"
+    "setup-project": "npm i && cd client && npm i",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
