@@ -15,6 +15,8 @@ export const register = async (req, res) => {
 };
 
 export const login = async (req, res) => {
+  // check if user exists
+  // check if password is correct
   const user = await User.findOne({ email: req.body.email });
 
   const isValidUser =
