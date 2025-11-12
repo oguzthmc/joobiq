@@ -1,4 +1,4 @@
-import { Form, Link, redirect } from 'react-router-dom';
+import { Form, Link, redirect, useNavigation } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/RegisterAndLoginPage';
 import { FormRow, Logo } from '../components';
 import customFetch from '../utils/customFetch';
@@ -17,6 +17,11 @@ export const action = async ({ request }) => {
 };
 
 const Register = () => {
+  const navigation = useNavigation();
+  console.log(navigation);
+
+  const isSubmitting = navigation.state === 'submitting';
+
   return (
     <Wrapper>
       <Form method="post" className="form">
@@ -52,8 +57,8 @@ const Register = () => {
           labelText="Password"
           defaultValue="secret123"
         />
-        <button type="submit" className="btn btn-block">
-          Submit
+        <button type="submit" className="btn btn-block" disabled={isSubmitting}>
+          {isSubmitting ? 'submitting...' : 'submit'}
         </button>
         <p>
           Already a member?
