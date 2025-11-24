@@ -3,7 +3,7 @@ import Wrapper from '../assets/wrappers/ChartsContainer';
 import BarChart from './BarChart';
 import AreaChart from './AreaChart';
 
-const ChartsContainer = () => {
+const ChartsContainer = ({ data }) => {
   const [barChart, setBarChart] = useState(true);
 
   return (
@@ -12,7 +12,7 @@ const ChartsContainer = () => {
       <button type="button" onClick={() => setBarChart(!barChart)}>
         {barChart ? 'Show Area Chart' : 'Show Bar Chart'}
       </button>
-      {barChart ? <BarChart /> : <AreaChart />}
+      {barChart ? <BarChart data={data} /> : <AreaChart data={data} />}
     </Wrapper>
   );
 };
