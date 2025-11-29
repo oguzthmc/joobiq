@@ -24,36 +24,11 @@ const Register = () => {
       <Form method="post" className="form">
         <Logo />
         <h4>Register</h4>
-        {/* Name Input */}
-        <FormRow type="text" name="name" labelText="Name" defaultValue="John" />
-        {/* Last Name Input */}
-        <FormRow
-          type="text"
-          name="lastName"
-          labelText="Last Name"
-          defaultValue="Doe"
-        />
-        {/* Location */}
-        <FormRow
-          type="text"
-          name="location"
-          labelText="Location"
-          defaultValue="New York"
-        />
-        {/* Email Input */}
-        <FormRow
-          type="email"
-          name="email"
-          labelText="Email"
-          defaultValue="john@gmail.com"
-        />
-        {/* Password Input */}
-        <FormRow
-          type="password"
-          name="password"
-          labelText="Password"
-          defaultValue="secret123"
-        />
+        <FormRow type="text" name="name" labelText="Name" />
+        <FormRow type="text" name="lastName" labelText="Last Name" />
+        <FormRow type="text" name="location" labelText="Location" />
+        <FormRow type="email" name="email" labelText="Email" />
+        <FormRow type="password" name="password" labelText="Password" />
         <SubmitBtn />
         <p>
           Already a member?
