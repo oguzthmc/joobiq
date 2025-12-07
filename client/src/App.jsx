@@ -41,7 +41,7 @@ const isDarkThemeEnabled = checkDefaultTheme();
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 1000 * 60 * 6,
+      staleTime: 1000 * 60 * 5,
     },
   },
 });
