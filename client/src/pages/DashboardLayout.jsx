@@ -1,10 +1,4 @@
-import {
-  Outlet,
-  redirect,
-  useLoaderData,
-  useNavigate,
-  useNavigation,
-} from 'react-router-dom';
+import { Outlet, redirect, useNavigate, useNavigation } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/Dashboard';
 import { BigSidebar, Loading, Navbar, SmallSidebar } from '../components';
 import React, { createContext, useContext, useState } from 'react';
